@@ -3,7 +3,6 @@
 :root {
 	--green: #366B5B;
 }
-
 * {
 	padding: 0;
 	margin: 0;
@@ -33,81 +32,79 @@ body, html {
 
 /* Main Styles */
 
+/* header */
+
 .container {
-	position: relative;
 	width: 100%;
 	max-width: 1366px;
-	height: 100%;
 	margin: 0 auto;
-	/* border: 1px solid black; */
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 }
-
-.main {
-	width: 100%;
-	max-width: 1255px;
-	height: 785px;
-	margin-left: 110px;
-
-}
-
-.navigation {
+.header {
 	display: flex;
-	width: 100%;
-	max-width: 650px;
+	flex-grow: 1;
 	justify-content: space-between;
-	margin-bottom: 90px;
+	margin-left: 113px;
+	position: relative;
 }
 
 .mainphoto {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	max-width: 550px;
+	width: 550px;
 }
 
-.nav {
+.header__navigation {
+	width: 60%;
+	margin-top: 27px;
+}
+
+.header__navigation--items {
 	text-decoration: none;
 	letter-spacing: 0.2em;
 	font-size: 24px;
 	color:#101010;
 	transition: all .3s;
-	padding-bottom: 5px;
 	border-bottom: 2px solid transparent;
-	margin-top: 30px;
+	margin-right: 13%;
+	transition: all .3s;
 
 }
 
-.nav:hover {
+.header__navigation--items:hover {
 	color: var(--green);
 	transform: scale(1.1);
 	border-bottom: 2px solid var(--green);
 }
 
-.name {
+/* main */
+
+.main {
+	position: absolute;
+	max-width: 36.57%;
+	margin-top: 162px;
+}
+
+.main__name {
+	position: relative;
 	color: var(--green);
 	font-size: 48px;
 	font-weight: 700;
 	letter-spacing: 0.2em;
 	margin-bottom: 60px;
-	position: relative;
 }
 
-.name img {
+.main__name img {
 	position: absolute;
 	bottom: 0;
-	
 }
 
-.main-title {
+.main__title {
 	color: var(--green);
 	font-size: 24px;
 	letter-spacing: 0.5em;
 	margin-bottom: 60px;
 }
 
-.main-text {
+.main__text {
 	font-size: 18px;
 	line-height: 21px;
 	letter-spacing: 0.2em;
@@ -127,3 +124,70 @@ body, html {
 .social  img:hover {
 	transform: scale(1.2);
 }
+
+/* portfolio */
+
+.portfolio {
+	margin-left: 113px;
+	margin-bottom: 90px;
+}
+
+.portfolio__title {
+	font-size: 24px;
+	letter-spacing: 0.5em;
+	color: var(--green);
+	font-weight: 500;
+	margin: 100px 0;
+
+}
+
+.portfolio__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1030px;
+	margin-left: 50px;
+
+}
+
+.portfolio__items--photo {
+	width: 390px;
+	margin: 30px;
+}
+
+/* price */
+
+.price {
+	/* position: relative; */
+	display: flex;
+	flex-direction: column;
+}
+
+.price__title {
+	font-size: 24px;
+	letter-spacing: 0.5em;
+	color: var(--green);
+	font-weight: 500;
+	margin-left: 113px;
+	margin-bottom: 80px;
+}
+
+.price__photo {
+	max-width: 490px;
+	margin-bottom: 45px;
+
+}
+
+.price__description {
+	max-width: 495px;
+	margin-left: 160px;
+
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.2em; 
+}
+
+.tariffs {
+	
+}
+

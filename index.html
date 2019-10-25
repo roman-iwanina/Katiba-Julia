@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Katiba Julia">
-	<meta name="author" content="Roman">
-	<title>Katiba Julia</title>
+	<meta name="description" content="Start Template">
+	<meta name="author" content="Admin">
+	<title>Start</title>
 
-	<link rel="icon" href="images/leaves1.png">
+	<link rel="icon" href="images/favicon.png">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -19,29 +19,85 @@
 
 <body>
 	<div class="container">
-		<div class="main">
-			<nav class="navigation">
-				<a class="nav" href="#">портфоліо</a>
-				<a class="nav" href="#">ціни</a>
-				<a class="nav" href="#">контакти</a>
+
+		<!-- header -->
+
+		<header class="header">
+			<nav class="header__navigation">
+				<a class="header__navigation--items" href="#">портфоліо</a>
+				<a class="header__navigation--items" href="#">ціни</a>
+				<a class="header__navigation--items" href="#">контакти</a>
 			</nav>
-			<h1 class="name">Katiba Julia <img src="images/leaves1.png"></h1>
-			<h2 class="main-title">Фото про справжніх</h2>
-			<div class="description">
-				<p class="main-text">Мене звати Юлія Катіба. Камера — це можливість поділитись собою, своїм світом з
-					іншими,
-					показати
-					#моїмиочима почуття, справжність, щирість.</p>
-				<p class="main-text">Якщо Ви відкриті до цього, запрошую до себе в об'єктив.</p>
-			</div>
-			<div class="social">
-				<a href="#"><img src="images/instagram.png" alt="instagram"></a>
-				<a href="#"><img src="images/telegram.png" alt="telegram"></a>
+
+			<div class="main">
+				<h1 class="main__name">Katiba Julia <img src="images/leaves1.png"></h1>
+				<h2 class="main__title">Фото про справжніх</h2>
+				<div class="description">
+					<p class="main__text">Мене звати Юлія Катіба. Камера — це можливість поділитись собою, своїм світом
+						з
+						іншими,
+						показати
+						#моїмиочима почуття, справжність, щирість.</p>
+					<p class="main__text">Якщо Ви відкриті до цього, запрошую до себе в об'єктив.</p>
+				</div>
+
+				<div class="social">
+					<a href="#"><img src="images/instagram.png" alt="instagram"></a>
+					<a href="#"><img src="images/telegram.png" alt="telegram"></a>
+				</div>
+
 			</div>
 			<img class="mainphoto" src="images/mainfoto.jpg" alt="Katiba Julia">
-		</div>
-	</div>
+		</header>
 
+		<!-- portfolio -->
+
+		<div class="portfolio">
+			<h2 class="portfolio__title">портфоліо</h2>
+			<ul class="portfolio__items">
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo1.jpg" alt="Фото 1"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo2.jpg" alt="Фото 2"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo3.jpg" alt="Фото 3"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo4.jpg" alt="Фото 4"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo5.jpg" alt="Фото 5"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo6.jpg" alt="Фото 6"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo7.jpg" alt="Фото 7"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo8.jpg" alt="Фото 8"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo9.jpg" alt="Фото 9"></li>
+				<li class="portfolio__items--photo"><img src="images/portfolio/photo10.jpg" alt="Фото 10"></li>
+			</ul>
+		</div>
+
+		<!-- price -->
+
+		<div class="price">
+			<h2 class="price__title">ціни</h2>
+			<div class="price__description">
+				<img class="price__photo" src="images/price-photo.jpg" alt="Дівчина з камерою">
+				<p class="price__description--text">Є можливість замовлення індивідуальної зйомки в залежності від ваших
+					побажань. Всі умови оговорюються особисто на зустрічі чи телефоном.</p>
+			</div>
+
+			<div class="tariffs">
+				<ul class="tariffs__list">
+
+					<li class="tariffs__list--item"><img src="images/kid.png">Дитяча фотозйомка (діти до 3 років)
+						<span class="tariffs__list--item-span">&nbsp;25-30 фото</span></li>
+
+					<li class="tariffs__list--item"><img src="images/heart.png">Love story<span
+							class="tariffs__list--item-span">&nbsp;25-35 фото</span></li>
+
+					<li class="tariffs__list--item"><img src="images/walk.png">Фото-прогулянка<span
+							class="tariffs__list--item-span">&nbsp;20-30 фото</span></li>
+
+					<li class="tariffs__list--item"><img src="images/Vector.png">Портретна зйомка<span
+							class="tariffs__list--item-span">&nbsp;15-20 фото</span></li>
+
+				</ul>
+				<p class="tariffs__description">Всі фотографії зі зйомки віддаються з авторською ретушшю та з корекцією
+					кольору протягом 2 тижнів з допомогою файлообмінника або іншим зручним для вас способом</p>
+			</div>
+		</div>
 </body>
 
 </html>
